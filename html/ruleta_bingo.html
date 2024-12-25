@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes mover{
+            0%{
+                width: 0px;
+                height:0px;
+            }
+            100%{
+                width:100px;
+                height:100px;
+            }
+        }
+        @keyframes aparecerLetra{
+            0%{
+                font-size: 0px;
+            }
+            100%{
+                font-size: 50px;
+            }
+        }
+        #bola{
+            width: 100px;
+            height:100px;
+            background-color: red;
+            border-radius: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+
+
+        }
+        #texto{
+            text-align:center;
+            line-height: 100px;
+            font-size: 40px;
+        }
+        #botonRule{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="bola"><p id="texto"></p></div>
+    <button onclick="tirarRuleta()" id="botonRule">TIRA DE LA RULETA!</button>
+    <div id ="tablaAqui"></div>
+
+    
+</body>
+<script src="js/ruleta.js"></script>
+
+</html>
